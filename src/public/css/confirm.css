@@ -1,0 +1,123 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+.header {
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: 1px solid #dbd7c8b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lora", serif;
+}
+.header__inner {
+    max-width: 1230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(155, 137, 114);
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 40px 15px;
+    max-width: 1230px;
+}
+.contact-form__heading {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(155, 137, 114);
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Lora", serif;
+}
+.form {
+    max-width: 1230px;
+    width: 70%;
+    margin: 0 auto;
+}
+.form__group {
+    display: flex;
+    justify-content: space-between;
+}
+.form__group-title {
+    width: 30%;
+    padding: 18px 55px;
+    background-color: rgb(185, 169, 152);
+    color: #fff8ee;
+    font-weight: 300;
+    font-size: 15px;
+    border-bottom: 0.5px solid #d1c3af;
+    border-right: 0.5px solid #d1c3af;
+    border-radius: 2px;
+}
+.form__group-title--last {
+    padding: 30px 55px;
+}
+.form__group-content {
+    width: 70%;
+}
+.form__group-content input {
+    padding: 22px 207px;
+    border: none;
+    border-bottom: .5px solid rgb(224, 224, 224);
+    border-right: .5px solid rgb(224, 224, 224);
+    outline: none;
+}
+.form__group-content p {
+    padding: 0 205px;
+    color: #9b8566;
+}
+.form__group-content--first input {
+    border-top: .5px solid rgb(224, 224, 224);
+}
+.form__group-content--last input {
+    padding: 34px 207px;
+}
+input {
+    color: #9b8566;
+}
+.form__button {
+    text-align: center;
+}
+.form__button-submit {
+    margin-top: 40px;
+    padding: 5px 30px;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(133, 120, 104);
+    border-radius: 1px;
+    transform: translateX(-50px);
+    position: absolute;
+    z-index: 2;
+}
+.form__button-submit:hover {
+    background-color: #776143;
+    cursor: pointer;
+}
+.form__correct {
+    text-align: right;
+    padding-right: 477px;
+    transform: translateY(-30px);
+}
+.form__button-correct {
+    font-size: 16px;
+    background-color: #ffffff;
+    text-decoration: underline;
+    border: none;
+    color: rgb(155, 137, 114);
+    transform: translateY(72px);
+    position: absolute;
+    z-index: 1;
+}
+.form__button-correct:hover {
+    color: rgb(122, 109, 92);
+    cursor: pointer;
+}

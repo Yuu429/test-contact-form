@@ -1,0 +1,230 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+.header {
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: 1px solid #dbd7c8b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lora", serif;
+}
+.header__inner {
+    max-width: 1230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(155, 137, 114);
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 40px 15px;
+    max-width: 1230px;
+}
+.contact-form__heading {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(155, 137, 114);
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Lora", serif;
+}
+.form {
+    margin: 0 auto;
+    width: 80%;
+}
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+.form__group:last-child {
+    margin-bottom: 0;
+}
+.form__label--item {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(151, 134, 111);
+}
+.form__label--required {
+    font-size: 18px;
+    color: rgb(248, 142, 142);
+}
+.form__input--text,
+.form__input--item-text,
+.form__input--gender,
+.form__input--tel,
+.form__input--select,
+.form__input--textarea {
+    width: 600px;
+}
+.form__input--text input {
+    padding: 0 30px;
+    width: 250px;
+    height: 35px;
+    margin-right: 35px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 3px;
+}
+input::placeholder {
+    color: #b1a392;
+}
+.form__input--item-text input{
+    padding: 0 30px;
+    width: 540px;
+    height: 35px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 3px;
+}
+.form__input--gender label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    color: #978266;
+}
+.form__input--gender input {
+    appearance: none;
+    position: absolute;
+    opacity: 0;
+}
+.form__input--gender span::before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid rgb(143, 131, 107);
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.form__input--gender input:checked + span::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(133, 120, 104);
+}
+.form__input--gender {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.form__input--tel input {
+    width: 158px;
+    height: 35px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 3px;
+}
+.tel-1 {
+    margin-right: 10px;
+}
+.tel-2 {
+    margin: 0 10px;
+}
+.tel-3 {
+    margin-left: 10px;
+}
+.form__input--tel input::placeholder {
+    text-align: center;
+}
+.form__input--tel input {
+    text-align: center;
+}
+.form__input--select {
+    position: relative;
+    display: inline-block;
+}
+.form__input--select::after {
+    content: '▼';
+    position: absolute;
+    width: 330px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #c2b5a6;
+}
+.form__input--select select {
+    width: 300px;
+    height: 35px;
+    padding: 0 30px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    appearance: none;
+    color: #000;
+}
+.form__input--select select:invalid {
+    color: #c2b5a6;
+}
+select:has(option[value=""]:checked) {
+    color: #c2b5a6;
+}
+.form__input--select option:nth-child(n+2) {
+    color: #000;
+}
+.form__input--textarea textarea {
+    width: 540px;
+    height: 120px;
+    padding: 10px 30px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    resize: none;
+}
+.form__input--textarea textarea::placeholder {
+    color: #b1a392;
+}
+.form__button {
+    text-align: center;
+}
+.form__button-submit {
+    padding: 8px 35px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: rgb(133, 120, 104);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.form__button-submit:hover {
+    background-color: #866c49
+}
+.form__error-group {
+    display: flex;
+    gap: 8px;
+    min-height: 1.2em;
+    align-items: center;
+
+}
+.form__error {
+    color: rgb(255, 106, 106);
+    font-size: 0.85rem;
+    line-height: 0.8;
+    background-color: #ebebeb;
+    padding: 4px;
+    border-radius: 3px;
+}
+.form__error-building {
+    font-size: 0.85rem;
+    line-height: 1;
+    background-color: #ebebeb;
+    padding: 4px;
+}
+.form__group-content-name .form__error-group {
+    gap: 147px;
+}

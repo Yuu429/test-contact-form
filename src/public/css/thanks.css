@@ -1,0 +1,31 @@
+.form-contact__thanks {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 24rem 0;
+    text-align: center;
+}
+.form-contact__thanks-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    color: rgb(145, 127, 104);
+}
+.form-contact__button-back {
+    font-family: "Lora", serif;
+    padding: 7px 30px;
+    background-color: rgb(133, 120, 104);
+    color: #ffffff;
+    font-weight: 300;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.form-contact__thanks-background {
+    font-size: 250px;
+    opacity: 0.1;
+    transform: translateY(-79%);
+    color: #aaa;
+    user-select: none;
+    position: absolute;
+    z-index: -1;
+}
