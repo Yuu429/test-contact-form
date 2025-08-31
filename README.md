@@ -26,6 +26,7 @@ laravel環境構築
 
 ## ER図
 
+![ER図](docs/index.drawio.png)
 
 ## URL
 ・開発環境:http://localhost/
